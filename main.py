@@ -319,48 +319,43 @@ def read_data_from_file(filename):
     return num_lessons, num_classes, num_days, max_lessons_per_day, teachers, room_names, class_names, lesson_names
 
 
-def main():
-    num_lessons = 23
-    num_classes = 2
-    num_days = 5
-    max_lessons_per_day = 5
+num_lessons = 23
+num_classes = 2
+num_days = 5
+max_lessons_per_day = 5
 
-    teachers = [
-        Teacher("Teacher 1", ["Math", "English", "Science", "History"]),
-        Teacher("Teacher 2", ["Math", "English", "Science", "Music"]),
-        Teacher("Teacher 3", ["Math", "English", "Science", "History"]),
-        Teacher("Teacher 4", ["PE", "Choreography"]),
-    ]
+teachers = [
+    Teacher("Teacher 1", ["Math", "English", "Science", "History"]),
+    Teacher("Teacher 2", ["Math", "English", "Science", "Music"]),
+    Teacher("Teacher 3", ["Math", "English", "Science", "History"]),
+    Teacher("Teacher 4", ["PE", "Choreography"]),
+]
 
-    room_names = ["Room 1", "Room 2", "Room 3", "PE Room", "Dance Room", "Music Room"]
+room_names = ["Room 1", "Room 2", "Room 3", "PE Room", "Dance Room", "Music Room"]
 
-    class_names = ["Class A", "Class B", "Class C"]
+class_names = ["Class A", "Class B", "Class C"]
 
-    lesson_names = [["Math", False, "None"], ["English", False, "None"], ["Science", False, "None"],
-                    ["History", False, "None"], ["PE", True, "PE Room"], ["Choreography", True, "Dance Room"],
-                    ["Music", True, "Music Room"]]
+lesson_names = [["Math", False, "None"], ["English", False, "None"], ["Science", False, "None"],
+                ["History", False, "None"], ["PE", True, "PE Room"], ["Choreography", True, "Dance Room"],
+                ["Music", True, "Music Room"]]
 
-    input_file = "input_file"
-    output_file = "output_file"
-    # Запис даних у файл
-    write_data_to_file(input_file, num_lessons, num_classes, num_days, max_lessons_per_day,
-                       teachers, room_names, class_names, lesson_names)
+input_file = "input_file"
+output_file = "output_file"
+# Запис даних у файл
+write_data_to_file(input_file, num_lessons, num_classes, num_days, max_lessons_per_day,
+                   teachers, room_names, class_names, lesson_names)
 
-    # Читання даних з файлу
-    num_lessons, num_classes, num_days, max_lessons_per_day, teachers, room_names, class_names, lesson_names = read_data_from_file(
-        input_file)
+# Читання даних з файлу
+num_lessons, num_classes, num_days, max_lessons_per_day, teachers, room_names, class_names, lesson_names = read_data_from_file(
+    input_file)
 
-    classes = []
-    for i in range(num_classes):
-        classes.append(Cls(class_names[i], teachers[i]))
+classes = []
+for i in range(num_classes):
+    classes.append(Cls(class_names[i], teachers[i]))
 
-    best_schedule = genetic_algorithm(lesson_names, teachers, classes, num_lessons, num_classes,
-                                      num_days, max_lessons_per_day, room_names)
+best_schedule = genetic_algorithm(lesson_names, teachers, classes, num_lessons, num_classes,
+                                  num_days, max_lessons_per_day, room_names)
 
-    print_schedule(best_schedule, num_days, max_lessons_per_day, num_classes, class_names)
-    print(
-        f"Даний розклад має пристосованість {fitness(best_schedule, num_lessons, max_lessons_per_day)} із {max_fitness} можливих")
-
-
-if __name__ == "__main__":
-    main()
+print_schedule(best_schedule, num_days, max_lessons_per_day, num_classes, class_names)
+print(
+    f"Даний розклад має пристосованість {fitness(best_schedule, num_lessons, max_lessons_per_day)} із {max_fitness} можливих")
