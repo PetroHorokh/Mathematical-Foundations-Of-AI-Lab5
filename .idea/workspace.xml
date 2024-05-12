@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c90a3f6-fcd0-4622-81f3-cf363ddfc154" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/algorithm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Lab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constans.py" beforeDir="false" afterPath="$PROJECT_DIR$/constans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,31 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Lab5" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Mathematical-Foundations-Of-AI-Lab4)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Lab5" />
       <option name="ENV_FILES" value="" />
@@ -61,8 +85,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Mathematical-Foundations-Of-AI-Lab4)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -75,6 +100,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.main" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,6 +123,12 @@
       <workItem from="1712326207595" duration="2450000" />
       <workItem from="1712354440047" duration="4298000" />
       <workItem from="1712441381068" duration="1096000" />
+      <workItem from="1713176014961" duration="680000" />
+      <workItem from="1713183117844" duration="2320000" />
+      <workItem from="1713693305622" duration="7000" />
+      <workItem from="1714421354018" duration="408000" />
+      <workItem from="1714723972745" duration="11000" />
+      <workItem from="1715504854460" duration="5372000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -123,6 +158,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mathematical_Foundations_Of_AI_Lab5$main.coverage" NAME="main Coverage Results" MODIFIED="1715509780530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Lab5$main.coverage" NAME="main Coverage Results" MODIFIED="1712442422484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
